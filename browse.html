@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Browse All</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../boostrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../bootstrap/ico/apple-touch-icon-57-precomposed.png">
+
+		<script>
+					$(document).ready(function() {
+						$('#windowTitleDialog').bind('show', function () {
+							document.getElementById ("xlInput").value = document.title;
+							});
+						});
+					function closeDialog () {
+						$('#windowTitleDialog').modal('hide'); 
+						};
+					function okClicked () {
+						document.title = document.getElementById ("xlInput").value;
+						closeDialog ();
+						};
+					</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Better Weekdays</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="profile.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+			<div class="page-header">
+				<h1>Browse All</h1>
+			</div>
+			<div class="span2">
+				<ul class="nav nav-list">
+					<li>
+						<a href="profile.html">My Jobs</a>
+					</li>
+					<li>
+						<a href="cands.html">My Candidates</a>
+					</li>
+					<li class="active">
+						<a href="browse.html">Browse All</a>
+					</li>
+				</ul>
+			</div>
+			<div class="span9">
+				<!--Body-->
+				
+				<!--Modals-->
+				
+				<div class="modal hide" id="frontModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">x</button>
+						<h3>Front-End Developer</h3>
+					</div>
+					<div class="modal-body">
+						<p>More Info...</p>
+					</div>
+					<div class="modal-footer">
+						<a href="frontend.html" class="btn btn-primary">See more</a>
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+
+				<div class="modal hide" id="backModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">x</button>
+						<h3>Back-End Developer</h3>
+					</div>
+					<div class="modal-body">
+						<p>More Info...</p>
+					</div>
+					<div class="modal-footer">
+						<a href="backend.html" class="btn btn-primary">See more</a>
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+				
+				<div class="modal hide" id="smithModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">x</button>
+						<h3>John Smith</h3>
+					</div>
+					<div class="modal-body">
+						<p>More Info...</p>
+					</div>
+					<div class="modal-footer">
+						<a href="smith.html" class="btn btn-primary">See more</a>
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+				
+				<div class="modal hide" id="annModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">x</button>
+						<h3>Mary Ann</h3>
+					</div>
+					<div class="modal-body">
+						<p>More Info...</p>
+					</div>
+					<div class="modal-footer">
+						<a href="ann.html" class="btn btn-primary">See more</a>
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+				
+				<div class="modal hide" id="jonesModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">x</button>
+						<h3>Bob Jones</h3>
+					</div>
+					<div class="modal-body">
+						<p>More Info...</p>
+					</div>
+					<div class="modal-footer">
+						<a href="jones.html" class="btn btn-primary">See more</a>
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+				
+				<div class="modal hide" id="doeModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">x</button>
+						<h3>John Doe</h3>
+					</div>
+					<div class="modal-body">
+						<p>More Info...</p>
+					</div>
+					<div class="modal-footer">
+						<a href="jones.html" class="btn btn-primary">See more</a>
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+				
+				<div class="modal hide" id="schmoeModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">x</button>
+						<h3>Joe Schmoe</h3>
+					</div>
+					<div class="modal-body">
+						<p>More Info...</p>
+					</div>
+					<div class="modal-footer">
+						<a href="jones.html" class="btn btn-primary">See more</a>
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+				
+				<div class="modal hide" id="addModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">x</button>
+						<h3>Add Candidate</h3>
+					</div>
+					<div class="modal-body">
+						<form>
+							<input type="text" class="span3" placeholder="Name"> <br/>
+							<input type="text" class="span3" placeholder="Status"> <br/>
+							<input type="text" class="span3" placeholder="Job">
+						</form>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn btn-primary">Submit</a>
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+					</div>
+				</div>
+				
+				
+				<table class="table table-striped table-bordered">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Status</th>
+							<th>Job</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a data-toggle="modal" href="#smithModal">John Smith</a>
+								<a href="#" id="add1" rel="tooltip" title="Add to My Candidates"><i class="icon-plus"></i></a></td>
+							<td>Pending Interview</td>
+							<td><a data-toggle="modal" href="#frontModal">Front-End Developer</a></td>
+						</tr>
+						<tr>
+							<td><a data-toggle="modal" href="#annModal">Mary Ann </a><a href="#" id="add2" rel="tooltip" title="Add to My Candidates"><i class="icon-plus"></i></a></td>
+							<td>Searching</td>
+							<td><a data-toggle="modal" href="#frontModal">Front-End Developer</a></td>
+						</tr>
+						<tr>
+							<td><a data-toggle="modal" href="#jonesModal">Bob Jones </a><a href="#" id="add3" rel="tooltip" title="Add to My Candidates"><i class="icon-plus"></i></a></td>
+							<td>Interviewed</td>
+							<td><a data-toggle="modal" href="#backModal">Back-End Developer</a></td>
+						</tr>
+						<tr>
+							<td><a data-toggle="modal" href="#doeModal">John Doe </a><a href="#" id="add4" rel="tooltip" title="Add to My Candidates"><i class="icon-plus"></i></a></td>
+							<td>Searching</td>
+							<td><a data-toggle="modal" href="#backModal">Back-End Developer</a></td>
+						</tr>
+						<tr>
+							<td><a data-toggle="modal" href="#schmoeModal">Joe Schmoe </a><a href="#" id="add5" rel="tooltip" title="Add to My Candidates"><i class="icon-plus"></i></a></td>
+							<td>Searching</td>
+							<td><a data-toggle="modal" href="#backModal">Back-End Developer</a></td>
+						</tr>
+							
+					</tbody>
+				</table>
+				
+				<a href="#addModal" data-toggle="modal">Add Candidate</a>
+				
+				
+				
+				
+				
+							
+			</div>
+		
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		<script src="http://static.scripting.com/github/bootstrap2/js/jquery.js"></script>
+	<script src="http://static.scripting.com/github/bootstrap2/js/bootstrap.js"></script>
+		<script>$(function ()  
+		{ $("#add1").tooltip();  
+		});
+		$(function ()  
+		{ $("#add2").tooltip();  
+		});
+		$(function ()  
+		{ $("#add3").tooltip();  
+		});
+		$(function ()  
+		{ $("#add4").tooltip();  
+		});
+		$(function ()  
+		{ $("#add5").tooltip();  
+		});
+		</script>
+  </body>
+</html>
